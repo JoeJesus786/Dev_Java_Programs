@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Check balance Success</title>
+<style type="text/css">
+	span {
+		display: inline-block;
+		width: 200px;
+		text-align: left;
+	}
+</style>
+</head>
+<body>
+	<div align="center">
+		<h2>Check Balance!</h2>
+		<span>Account number:</span><span th:text="${account.accountNumber}"></span><br/>
+		<span>Total Balance:</span><span th:text="${account.balance}"></span><br/>
+	</div>
+</body>
+</html>
